@@ -1,0 +1,122 @@
+{
+  "info": {
+    "name": "Ecommerce API Collection",
+    "_postman_id": "ecom-collection-001",
+    "description": "Postman collection for Ecommerce API Testing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login API - Valid",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"email\": \"test@test.com\", \"password\": \"password123\" }"
+        },
+        "url": {
+          "raw": "https://example.com/api/login",
+          "protocol": "https",
+          "host": ["example", "com"],
+          "path": ["api", "login"]
+        }
+      }
+    },
+    {
+      "name": "Login API - Invalid",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"email\": \"wrong@test.com\", \"password\": \"wrongpass\" }"
+        },
+        "url": {
+          "raw": "https://example.com/api/login",
+          "protocol": "https",
+          "host": ["example", "com"],
+          "path": ["api", "login"]
+        }
+      }
+    },
+    {
+      "name": "Get All Products",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://example.com/api/products",
+          "protocol": "https",
+          "host": ["example", "com"],
+          "path": ["api", "products"]
+        }
+      }
+    },
+    {
+      "name": "Get Product by ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://example.com/api/products/1",
+          "protocol": "https",
+          "host": ["example", "com"],
+          "path": ["api", "products", "1"]
+        }
+      }
+    },
+    {
+      "name": "Add to Cart",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"product_id\": 1, \"quantity\": 2 }"
+        },
+        "url": {
+          "raw": "https://example.com/api/cart",
+          "protocol": "https",
+          "host": ["example", "com"],
+          "path": ["api", "cart"]
+        }
+      }
+    },
+    {
+      "name": "Checkout",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"payment_method\": \"card\", \"address\": \"London\" }"
+        },
+        "url": {
+          "raw": "https://example.com/api/checkout",
+          "protocol": "https",
+          "host": ["example", "com"],
+          "path": ["api", "checkout"]
+        }
+      }
+    },
+    {
+      "name": "Order History",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://example.com/api/orders",
+          "protocol": "https",
+          "host": ["example", "com"],
+          "path": ["api", "orders"]
+        }
+      }
+    }
+  ]
+}
