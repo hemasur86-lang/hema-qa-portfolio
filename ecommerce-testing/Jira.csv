@@ -1,0 +1,410 @@
+﻿Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Labels,Labels,Labels,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Inward issue link (Blocks),Outward issue link (Blocks),Custom field (Development),Custom field (Goals),Custom field (Issue color),Custom field (Rank),Custom field (Start date),Custom field (Team),Custom field (Vulnerability),Comment,Comment,Status Category,Status Category Changed
+TC01-Login with valid credentials,KAN-1,10000,Task,Done,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,Done,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,02/Jul/26 8:56 PM,02/Jul/26 9:13 PM,30/Aug/26 3:57 PM,02/Jul/26 9:13 PM,,0,,,,"Preconditions:
+
+* User account exists
+* Browser opened
+
+Test Steps:
+
+# Navigate to login page
+# Enter valid username
+# Enter valid password
+# Click Login
+
+Expected Result:
+
+* User is redirected to dashboard",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,,,,,0|hzzzzz:,,,,02/Jul/26 9:08 PM;712020:3a137cb8-c924-4e33-a988-47af9f8800b2;Test failed. System allowed login with invalid password. Bug needs to be raised.,,Done,02/Jul/26 9:13 PM
+TC02-Login with invalid password,KAN-2,10001,Task,In Progress,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,02/Jul/26 8:59 PM,05/Jul/26 12:44 PM,05/Jul/26 12:45 PM,,,0,,,,"*Preconditions:*
+
+* User account exists
+* Browser is open
+* User is on the login page
+
+*Test Steps:*
+
+# Enter a valid username (e.g., [hema@test.com|mailto:hema@test.com])
+# Enter an invalid password (e.g., Wrong@123)
+# Click the *Login* button
+
+*Expected Result:*
+
+* System should NOT allow login
+* User should remain on the login page
+* Error message should appear: *“Invalid username or password”*
+* No session should be created
+
+*Priority:* Medium *Labels:* login, negative-test, QA-practice *Status:* To Do",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,KAN-6,,,,,0|i00007:,,,,05/Jul/26 12:35 PM;712020:3a137cb8-c924-4e33-a988-47af9f8800b2;it  doesnot show error message.,"05/Jul/26 12:41 PM;712020:3a137cb8-c924-4e33-a988-47af9f8800b2;test failed,.bug needs to be raised",In Progress,03/Jul/26 11:39 AM
+TC04 – Search product with valid keyword,KAN-8,10039,Task,In Progress,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,05/Jul/26 2:47 PM,05/Jul/26 2:47 PM,30/Aug/26 4:06 PM,,,0,,,,"Precondition:
+
+* User is logged in
+* Products exist in the database
+
+Test Steps:
+
+# Go to the search bar
+# Enter a valid keyword (e.g., “Shoes”)
+# Click Search
+
+Test Data:
+
+* Keyword: Shoes
+
+Expected Result:
+
+* Relevant products matching the keyword should be displayed.",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,,,,,0|i0000b:,,,,,,In Progress,05/Jul/26 2:47 PM
+TC03 – Login with empty password field,KAN-3,10002,Task,To Do,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,02/Jul/26 9:01 PM,02/Jul/26 9:01 PM,30/Aug/26 4:01 PM,,,0,,,,"*Preconditions:*
+
+* User account exists
+* Browser is open
+* User is on the login page
+
+*Test Steps:*
+
+# Enter a valid username (e.g., [hema@test.com|mailto:hema@test.com])
+# Leave the password field empty
+# Click the *Login* button
+
+*Expected Result:*
+
+* System should NOT allow login
+* User should remain on the login page
+* Error message should appear: *“Password cannot be empty”* or *“Please enter your password”*
+* No session should be created
+
+*Priority:* Medium *Labels:* login, negative-test, QA-practice *Status:* To Do",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,,,,,0|i0000f:,,,,,,To Do,02/Jul/26 9:01 PM
+Bug – Login fails with valid password,KAN-4,10003,Bug,To Do,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,02/Jul/26 9:13 PM,02/Jul/26 9:13 PM,05/Jul/26 2:45 PM,,,0,,,,"Steps to Reproduce:
+
+# Enter valid username
+# Enter valid password
+# Click Login
+
+Expected Result:
+System should allow login .
+
+Actual Result:
+System showed invalid username or password.",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,,,,,0|i0000n:,,,,,,To Do,02/Jul/26 9:13 PM
+"As a user, I want to log in using my email and password so that I can access my account.",KAN-5,10004,Story,To Do,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,02/Jul/26 9:22 PM,02/Jul/26 9:22 PM,,,,0,,,,"*Acceptance Criteria:*
+
+* User can enter email
+* User can enter password
+* Login button is visible
+* Error message appears for invalid credentials
+* Successful login redirects to dashboard
+
+h3. *Test Scenarios:*
+
+# Valid login
+# Invalid password
+# Invalid username
+# Empty password
+# Empty username
+# Both fields empty
+# Invalid email format
+# SQL injection attempt
+# Account lock after multiple failures
+# Successful login redirect",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,,,,,0|i0000v:,,,,,,To Do,02/Jul/26 9:22 PM
+TC02 – Invalid Password,KAN-6,10005,Task,To Do,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,02/Jul/26 9:24 PM,05/Jul/26 12:44 PM,30/Aug/26 4:25 PM,,,0,,,,"Preconditions:
+
+* User account exists
+* Browser is open
+* User is on the login page
+
+Test Steps:
+
+# Enter valid username
+# Enter invalid password
+# Click Login
+
+Expected Result:
+
+* Error message: ""Invalid username or password""
+* Login should be blocked",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,KAN-2,,,,0|i00013:,,,,,,To Do,02/Jul/26 9:24 PM
+RT01 – Regression: Valid login after fix,KAN-7,10006,Task,To Do,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,02/Jul/26 10:17 PM,02/Jul/26 10:17 PM,30/Aug/26 4:35 PM,,,0,,,,"Preconditions:
+Bug KAN-2 is fixed.
+
+Test Steps:
+
+# Enter valid username
+# Enter valid password
+# Click Login
+
+Expected Result:
+User should be redirected to dashboard.",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,,,,,0|i0001b:,,,,,,To Do,02/Jul/26 10:17 PM
+TC05 – Add Product to Cart,KAN-9,10040,Task,To Do,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,05/Jul/26 2:51 PM,05/Jul/26 2:51 PM,30/Aug/26 4:07 PM,,,0,,,,"*Precondition:*
+
+* User is logged in
+* Product is available and in stock
+
+*Test Steps:*
+
+# Navigate to the product listing page
+# Select a product
+# Click “Add to Cart”
+
+*Test Data:*
+
+* Product: Any available item
+
+*Expected Result:*
+
+* Product should be added to the cart
+* Cart icon should update (e.g., count increases by 1)
+* Confirmation message should appear (“Item added to cart”)",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,,,,,0|i0001j:,,,,,,To Do,05/Jul/26 2:51 PM
+TC06 – Remove Product from Cart,KAN-10,10041,Task,To Do,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,05/Jul/26 2:53 PM,05/Jul/26 2:53 PM,30/Aug/26 4:09 PM,,,0,,,,"*Precondition:*
+
+* Cart contains at least one product
+
+*Test Steps:*
+
+# Go to the Cart page
+# Click “Remove” next to a product
+
+*Test Data:*
+
+* Product already in cart
+
+*Expected Result:*
+
+* Product should be removed from the cart
+* Cart count should decrease
+* Cart should update immediately",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,,,,,0|i0001r:,,,,,,To Do,05/Jul/26 2:53 PM
+TC07 – Checkout with Valid Card,KAN-11,10042,Task,To Do,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,05/Jul/26 2:54 PM,05/Jul/26 2:54 PM,30/Aug/26 4:11 PM,,,0,,,,"*Precondition:*
+
+* Cart contains at least one product
+* User has valid payment details
+
+*Test Steps:*
+
+# Go to Checkout
+# Enter valid card details
+# Click “Pay Now”
+
+*Test Data:*
+
+* Card Number: 4111 1111 1111 1111 (valid Visa test card)
+* Expiry: Any future date
+* CVV: 123
+
+*Expected Result:*
+
+* Payment should be successful
+* Order confirmation page should appear
+* Order ID should be generated",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,,,,,0|i0001z:,,,,,,To Do,05/Jul/26 2:54 PM
+TC08 – Checkout with Invalid Card,KAN-12,10043,Task,To Do,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,05/Jul/26 3:02 PM,05/Jul/26 3:02 PM,30/Aug/26 4:11 PM,,,0,,,,"*Precondition:*
+
+* Cart contains at least one product
+
+*Test Steps:*
+
+# Go to Checkout
+# Enter invalid card details
+# Click “Pay Now”
+
+*Test Data:*
+
+* Card Number: 1234 5678 0000 0000
+* Expiry: Any date
+* CVV: 000
+
+*Expected Result:*
+
+* Payment should fail
+* Error message should appear (“Invalid card details”)
+* Order should NOT be created",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,,,,,0|i00027:,,,,,,To Do,05/Jul/26 3:02 PM
+TC09 – View Order History,KAN-13,10044,Task,To Do,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,05/Jul/26 3:03 PM,05/Jul/26 3:03 PM,30/Aug/26 4:13 PM,,,0,,,,"*Precondition:*
+
+* User has placed at least one order
+
+*Test Steps:*
+
+# Go to “My Account”
+# Click “Order History”
+
+*Test Data:*
+
+* Logged‑in user
+
+*Expected Result:*
+
+* List of past orders should be displayed
+* Each order should show:
+** Order ID
+** Date
+** Amount
+** Status",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,,,,,0|i0002f:,,,,,,To Do,05/Jul/26 3:03 PM
+BUG01 – Cart does not update after adding product,KAN-14,10045,Bug,To Do,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,05/Jul/26 3:05 PM,05/Jul/26 3:05 PM,,,,0,cart,ECommrece,functional,"*Precondition:*
+
+* User is logged in
+* Product is available in stock
+
+*Steps to Reproduce:*
+
+# Navigate to product listing
+# Select a product
+# Click “Add to Cart”
+
+*Expected Result:*
+
+* Product should be added
+* Cart count should increase by 1
+* Confirmation message should appear
+
+*Actual Result:*
+
+* Product is added, but cart count remains unchanged
+* No confirmation message displayed
+
+*Severity:* Medium 
+
+*Priority:* High",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,,,,,0|i0002n:,,,,,,To Do,05/Jul/26 3:05 PM
+BUG03 – Order history page does not load,KAN-15,10046,Bug,To Do,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,05/Jul/26 3:06 PM,05/Jul/26 3:06 PM,,,,0,,,,"*Precondition:*
+
+* User has placed at least one order
+
+*Steps to Reproduce:*
+
+# Go to “My Account”
+# Click “Order History”
+
+*Expected Result:*
+
+* List of past orders should be displayed
+
+*Actual Result:*
+
+* Page shows loading spinner indefinitely
+* No orders displayed
+
+*Severity:* Medium *Priority:* Medium
+
+*Labels:*   orders, ecommerce, functional",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,,,,,0|i0002v:,,,,,,To Do,05/Jul/26 3:06 PM
+bug02-Payment fails with valid card,KAN-16,10047,Bug,To Do,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,05/Jul/26 3:08 PM,05/Jul/26 3:08 PM,30/Aug/26 3:06 PM,,,0,,,," *Precondition:*
+
+* Cart contains at least one product
+* Valid card details available
+
+*Steps to Reproduce:*
+
+# Go to Checkout
+# Enter valid card details
+# Click “Pay Now”
+
+*Expected Result:*
+
+* Payment should be successful
+* Order confirmation page should appear
+
+*Actual Result:*
+
+* Error message displayed: “Payment failed”
+* No order created
+
+*Severity:* High *Priority:* High",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,,,,,0|i00033:,,,,,,To Do,05/Jul/26 3:08 PM
+RT02 – Regression: Add Product to Cart (Jira‑Ready Format),KAN-17,10048,Task,To Do,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,05/Jul/26 3:10 PM,05/Jul/26 3:10 PM,30/Aug/26 4:37 PM,,,0,,,,"*Reason for Regression:*   BUG01 (Cart count not updating) has been fixed. We must ensure the fix did not break existing cart functionality.
+
+*Precondition:*
+
+* User is logged in
+* Product is available in stock
+
+*Regression Test Steps:*
+
+# Navigate to product listing
+# Select a product
+# Click “Add to Cart”
+# Verify cart count updates
+# Add another product
+# Verify cart count updates again
+# Refresh the page
+# Verify cart count persists
+# Navigate to Cart page
+# Verify both products are listed correctly
+
+*Expected Result:*
+
+* Cart count updates correctly
+* Products appear in cart
+* No new issues introduced after the fix
+
+*Labels:*   regression, ecommerce, cart
+
+*Priority:* High",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,,,,,0|i0003b:,,,,,,To Do,05/Jul/26 3:10 PM
+RT03 – Regression: Checkout Flow After Payment Fix,KAN-18,10049,Task,To Do,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,05/Jul/26 3:10 PM,05/Jul/26 3:10 PM,30/Aug/26 4:39 PM,,,0,,,,"*Reason for Regression:*   BUG02 (Payment fails with valid card) has been fixed. We must ensure checkout and payment flow still works correctly and no new issues appear.
+
+*Precondition:*
+
+* Cart contains at least one product
+* User has valid payment details
+
+*Regression Test Steps:*
+
+# Go to Checkout
+# Enter valid card details
+# Click “Pay Now”
+# Verify payment succeeds
+# Verify order confirmation page appears
+# Verify order ID is generated
+# Navigate to Order History
+# Verify the new order appears in the list
+# Refresh Order History
+# Verify order still appears correctly
+
+*Expected Result:*
+
+* Payment succeeds
+* Order confirmation is displayed
+* Order appears in Order History
+* No new issues introduced after the fix
+
+*Labels:*   regression, ecommerce, checkout, payment
+
+*Priority:* High",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,,,,,0|i0003j:,,,,,,To Do,05/Jul/26 3:10 PM
+"US01 – As a user, I want to search for products so I can find items quickly.",KAN-19,10050,Story,To Do,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,05/Jul/26 3:12 PM,05/Jul/26 3:12 PM,,,,0,,,,"Users should be able to enter a keyword and view relevant product results.
+
+*Acceptance Criteria:*
+
+* Search bar is visible on product listing page
+* User can enter a keyword
+* Clicking “Search” displays matching products
+* No results message appears when no products match
+* Search results load within 2 seconds
+
+*Labels:*   ecommerce, search, story
+
+h1. ",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,,,,,0|i0003r:,,,,,,To Do,05/Jul/26 3:12 PM
+"US02 – As a user, I want to add products to my cart so I can purchase them.",KAN-20,10051,Story,To Do,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,05/Jul/26 3:14 PM,05/Jul/26 3:14 PM,,,,0,,,,"Users should be able to add items to their shopping cart from product pages.
+
+*Acceptance Criteria:*
+
+* “Add to Cart” button is visible
+* Clicking the button adds the product to the cart
+* Cart count updates correctly
+* Confirmation message appears
+* Cart persists after page refresh
+
+*Labels:*   ecommerce, cart, story",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,,,,,0|i0003z:,,,,,,To Do,05/Jul/26 3:14 PM
+"US03 – As a user, I want to checkout securely so I can complete my purchase.",KAN-21,10052,Story,To Do,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,05/Jul/26 3:14 PM,05/Jul/26 3:14 PM,,,,0,,,,"Users should be able to enter payment details and place an order.
+
+*Acceptance Criteria:*
+
+* Checkout page displays order summary
+* User can enter card details
+* Valid card → payment success
+* Invalid card → error message
+* Order confirmation page displays order ID
+* Order is saved in order history
+
+*Labels:*   ecommerce, checkout, payment, story",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,,,,,0|i00047:,,,,,,To Do,05/Jul/26 3:14 PM
+"US04 – As a user, I want to view my order history so I can track my purchases.",KAN-22,10053,Story,To Do,KAN,My Kanban Space,software,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,Medium,,,,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,05/Jul/26 3:15 PM,05/Jul/26 3:15 PM,,,,0,,,,"Users should be able to see all past orders with details.
+
+*Acceptance Criteria:*
+
+* “Order History” option visible under My Account
+* Page loads successfully
+* Orders display:
+** Order ID
+** Date
+** Amount
+** Status
+* Orders persist after refresh
+* Error message shown if no orders exist",,Hema Latha,712020:3a137cb8-c924-4e33-a988-47af9f8800b2,,,,,,,,,,,,,,0|i0004f:,,,,,,To Do,05/Jul/26 3:15 PM
