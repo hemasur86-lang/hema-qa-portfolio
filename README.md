@@ -7,6 +7,4 @@ This repository contains:
 - SQL Backend Validation Project
 - API Testing Postman Collection
 - Test Cases, Bug Reports, Screenshots
-- ISTQB Notes (optional)
 
-More content will be added soon.
