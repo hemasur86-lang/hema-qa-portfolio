@@ -1,0 +1,87 @@
+Join Queries
+
+ 1. INNER JOIN: users with their orders
+SELECT u.user_id, u.name, o.order_id, o.amount
+FROM users u
+INNER JOIN orders o
+ON u.user_id = o.user_id;
+
+ 2. LEFT JOIN: all users including those without orders
+SELECT u.user_id, u.name, o.order_id, o.amount
+FROM users u
+LEFT JOIN orders o
+ON u.user_id = o.user_id;
+
+ 3. RIGHT JOIN: all orders including those without matching users
+SELECT u.user_id, u.name, o.order_id, o.amount
+FROM users u
+RIGHT JOIN orders o
+ON u.user_id = o.user_id;
+
+ 4. FULL OUTER JOIN (if supported)
+SELECT u.user_id, u.name, o.order_id, o.amount
+FROM users u
+FULL OUTER JOIN orders o
+ON u.user_id = o.user_id;
+
+5. JOIN with multiple conditions
+SELECT u.name, o.order_id, o.amount
+FROM users u
+INNER JOIN orders o
+ON u.user_id = o.user_id
+AND o.amount > 100;
+
+Aggregate Queries
+
+ 1. Count total users
+SELECT COUNT(*) AS total_users
+FROM users;
+
+ 2. Count orders per user
+SELECT user_id, COUNT(order_id) AS total_orders
+FROM orders
+GROUP BY user_id;
+
+ 3. Sum of all order amounts
+SELECT SUM(amount) AS total_amount
+FROM orders;
+
+ 4. Average order amount
+SELECT AVG(amount) AS avg_order_amount
+FROM orders;
+
+ 5. Minimum and maximum order amount
+SELECT MIN(amount) AS min_amount,
+       MAX(amount) AS max_amount
+FROM orders;
+
+6. Group by city and count users
+SELECT city, COUNT(*) AS total_users
+FROM users
+GROUP BY city;
+
+Update,Delete Queries
+
+ 1. Update user email
+UPDATE users
+SET email = 'new_email@test.com'
+WHERE user_id = 5;
+
+2. Update order amount
+UPDATE orders
+SET amount = amount + 10
+WHERE order_id = 101;
+
+3. Delete a user
+DELETE FROM users
+WHERE user_id = 5;
+
+ 4. Delete orders with zero amount
+DELETE FROM orders
+WHERE amount = 0;
+
+ 5. Soft delete (if using status column)
+UPDATE users
+SET status = 'inactive'
+WHERE user_id = 7;
+
